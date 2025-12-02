@@ -1,0 +1,2058 @@
+<!DOCTYPE html><html><head>
+    <style id="styleguide-variables">
+        :root {
+            --vId-color-token-a: #60A5FA;
+            --vId-color-token-b: #EF4444;
+            --vId-17fd0649-5e8f-4942-804b-415062ae4627: #93C5FD;
+            --vId-73b05d25-b967-4180-bacc-c456c82e2a91: #1F2937;
+            --vId-color-token-c: #0F172A;
+            --vId-color-token-d: #f9fafb;
+            --vId-font-token-a: Poppins;
+        }
+    </style>
+    <title>SaaS Bank Project - Home</title>
+
+    <!-- CSS links will be added dynamically per page during export -->
+    <!-- <link rel="stylesheet" type="text/css" href="main.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="responsive-tablet.css" media="(max-width: 1199px)" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="responsive-mobile.css" media="(max-width: 767px)" /> -->
+
+    <link rel="preload" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css" as="style">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet" data-optimized-fonts="true">
+    <meta property="og:title" content="SaaS Bank Project - Home">
+    <meta property="twitter:title" content="SaaS Bank Project - Home">
+    <style id="humble-scroll-css">
+        /* 
+ Credits to
+ GitHub Repository: https://github.com/MathiasOxholm/humbleScroll
+ User: MathiasOxholm
+
+ */
+        :root {
+            --cdhs-delay: 0ms;
+            --cdhs-easing: var(--cdhs-ease-out);
+            --cdhs-duration: 600ms;
+            --cdhs-ease-in: cubic-bezier(0.4, 0, 1, 1);
+            --cdhs-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+            --cdhs-ease-out: cubic-bezier(0, 0, 0.2, 1);
+            --cdhs-ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+            --cdhs-opacity: 1;
+            --cdhs-translate-y: 0;
+            --cdhs-translate-x: 0;
+            --cdhs-scale: 1;
+            --cdhs-rotate: 0deg;
+            --cdhs-perspective: 0;
+            --cdhs-rotate-x: 0deg;
+            --cdhs-rotate-y: 0deg;
+            --cdhs-skew-x: 0deg;
+            --cdhs-skew-y: 0deg;
+            --cdhs-translate-ratio: 1;
+            --cdhs-scale-ratio: 0.2;
+            --cdhs-duration-ratio: 1;
+            --cdhs-translate-x-amount: 2rem;
+            --cdhs-translate-y-amount: 3rem;
+            --cdhs-flip-x-amount: 100deg;
+            --cdhs-flip-y-amount: -100deg;
+            --cdhs-perspective-amount: 2000px;
+            --cdhs-stagger-amount: 100ms;
+            --cdhs-skew-amount: 20deg;
+            --cdhs-reveal-amount: 100%;
+            --cdhs-blur: 0;
+            --cdhs-blur-amount: 5px
+        }
+
+        [data-cdhs*=ease-in] {
+            --cdhs-easing: var(--cdhs-ease-in)
+        }
+
+        [data-cdhs*=ease-out] {
+            --cdhs-easing: var(--cdhs-ease-out)
+        }
+
+        [data-cdhs*=ease-in-out] {
+            --cdhs-easing: var(--cdhs-ease-in-out)
+        }
+
+        [data-cdhs*=ease-out-back] {
+            --cdhs-easing: var(--cdhs-ease-out-back)
+        }
+
+        [data-cdhs*=sm] {
+            --cdhs-translate-ratio: 0.5
+        }
+
+        [data-cdhs*=md] {
+            --cdhs-translate-ratio: 0.75
+        }
+
+        [data-cdhs*=lg] {
+            --cdhs-translate-ratio: 1.5
+        }
+
+        [data-cdhs*=xl] {
+            --cdhs-translate-ratio: 2
+        }
+
+        [data-cdhs*="2xl"] {
+            --cdhs-translate-ratio: 3
+        }
+
+        [data-cdhs~=extra-slow] {
+            --cdhs-duration-ratio: 3
+        }
+
+        [data-cdhs~=slow] {
+            --cdhs-duration-ratio: 1.5
+        }
+
+        [data-cdhs~=fast] {
+            --cdhs-duration-ratio: 0.75
+        }
+
+        [data-cdhs~=extra-fast] {
+            --cdhs-duration-ratio: 0.5
+        }
+
+        [data-cdhs*=fade],
+        [data-cdhs*=zoom] {
+            --cdhs-opacity: 0
+        }
+
+        [data-cdhs*=zoom-in] {
+            --cdhs-scale: calc(1 + var(--cdhs-scale-ratio))
+        }
+
+        [data-cdhs*=zoom-out] {
+            --cdhs-scale: calc(1 - var(--cdhs-scale-ratio))
+        }
+
+        [data-cdhs~=up] {
+            --cdhs-translate-y: calc(var(--cdhs-translate-y-amount)*var(--cdhs-translate-ratio))
+        }
+
+        [data-cdhs~=down] {
+            --cdhs-translate-y: calc(0px - var(--cdhs-translate-y-amount)*var(--cdhs-translate-ratio))
+        }
+
+        [data-cdhs~=left] {
+            --cdhs-translate-x: calc(var(--cdhs-translate-x-amount)*var(--cdhs-translate-ratio))
+        }
+
+        [data-cdhs~=right] {
+            --cdhs-translate-x: calc(0px - var(--cdhs-translate-x-amount)*var(--cdhs-translate-ratio))
+        }
+
+        [data-cdhs*=flip] {
+            --cdhs-perspective: var(--cdhs-perspective-amount);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden
+        }
+
+        [data-cdhs*=flip-up] {
+            --cdhs-rotate-x: calc(0deg - var(--cdhs-flip-x-amount))
+        }
+
+        [data-cdhs*=flip-down] {
+            --cdhs-rotate-x: var(--cdhs-flip-x-amount)
+        }
+
+        [data-cdhs*=flip-left] {
+            --cdhs-rotate-y: calc(0deg - var(--cdhs-flip-y-amount))
+        }
+
+        [data-cdhs*=flip-right] {
+            --cdhs-rotate-y: var(--cdhs-flip-y-amount)
+        }
+
+        [data-cdhs*=blur] {
+            --cdhs-blur: var(--cdhs-blur-amount)
+        }
+
+        [data-cdhs*=skew-up] {
+            --cdhs-skew-y: var(--cdhs-skew-amount)
+        }
+
+        [data-cdhs*=skew-down] {
+            --cdhs-skew-y: calc(0deg - var(--cdhs-skew-amount))
+        }
+
+        [data-cdhs*=skew-right] {
+            --cdhs-skew-x: var(--cdhs-skew-amount)
+        }
+
+        [data-cdhs*=skew-left] {
+            --cdhs-skew-x: calc(0deg - var(--cdhs-skew-amount))
+        }
+
+        [data-cdhs*=reveal] {
+            overflow: hidden
+        }
+
+        [data-cdhs*=reveal-up] * {
+            --cdhs-translate-y: var(--cdhs-reveal-amount)
+        }
+
+        [data-cdhs*=reveal-down] {
+            --cdhs-translate-y: calc(0px - var(--cdhs-reveal-amount))
+        }
+
+        [data-cdhs*=reveal-right] {
+            --cdhs-translate-x: calc(0px - var(--cdhs-reveal-amount))
+        }
+
+        [data-cdhs*=reveal-left] {
+            --cdhs-translate-x: var(--cdhs-reveal-amount)
+        }
+
+        @media (prefers-reduced-motion:no-preference) {
+            [data-cdhs] {
+                filter: blur(var(--cdhs-blur));
+                opacity: var(--cdhs-opacity);
+                transform: translate3d(var(--cdhs-translate-x), var(--cdhs-translate-y), 0) scale(var(--cdhs-scale)) rotate(var(--cdhs-rotate)) perspective(var(--cdhs-perspective)) rotateX(var(--cdhs-rotate-x)) rotateY(var(--cdhs-rotate-y)) skew(var(--cdhs-skew-x), var(--cdhs-skew-y));
+                transition-delay: var(--cdhs-delay);
+                transition-duration: calc(var(--cdhs-duration)*var(--cdhs-duration-ratio));
+                transition-property: transform, opacity, filter;
+                transition-timing-function: var(--cdhs-easing)
+            }
+
+            [data-cdhs]:not(.cdhs-inview) {
+                /* pointer-events: none */
+            }
+
+            [data-cdhs].cdhs-inview {
+                --cdhs-opacity: 1;
+                --cdhs-translate-y: 0;
+                --cdhs-translate-x: 0;
+                --cdhs-scale: 1;
+                --cdhs-rotate: 0deg;
+                --cdhs-rotate-x: 0deg;
+                --cdhs-rotate-y: 0deg;
+                --cdhs-skew-x: 0deg;
+                --cdhs-skew-y: 0deg;
+                --cdhs-blur: 0;
+                /* pointer-events: auto */
+            }
+        }
+
+        @media (max-width:768px) {
+            body [data-cdhs*="phone:zoom-in"] {
+                --cdhs-scale: calc(1 + var(--cdhs-scale-ratio))
+            }
+
+            body [data-cdhs*="phone:zoom-out"] {
+                --cdhs-scale: calc(1 - var(--cdhs-scale-ratio))
+            }
+
+            body [data-cdhs*="phone:up"] {
+                --cdhs-translate-y: calc(var(--cdhs-translate-y-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="phone:down"] {
+                --cdhs-translate-y: calc(0px - var(--cdhs-translate-y-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="phone:left"] {
+                --cdhs-translate-x: calc(var(--cdhs-translate-x-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="phone:right"] {
+                --cdhs-translate-x: calc(0px - var(--cdhs-translate-x-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="phone:flip-up"] {
+                --cdhs-rotate-x: calc(0deg - var(--cdhs-flip-x-amount))
+            }
+
+            body [data-cdhs*="phone:flip-down"] {
+                --cdhs-rotate-x: var(--cdhs-flip-x-amount)
+            }
+
+            body [data-cdhs*="phone:flip-left"] {
+                --cdhs-rotate-y: calc(0deg - var(--cdhs-flip-y-amount))
+            }
+
+            body [data-cdhs*="phone:flip-right"] {
+                --cdhs-rotate-y: var(--cdhs-flip-y-amount)
+            }
+
+            body [data-cdhs*="phone:blur"] {
+                --cdhs-blur: var(--cdhs-blur-amount)
+            }
+        }
+
+        @media (min-width:768px) {
+            body [data-cdhs*="tablet:zoom-in"] {
+                --cdhs-scale: calc(1 + var(--cdhs-scale-ratio))
+            }
+
+            body [data-cdhs*="tablet:zoom-out"] {
+                --cdhs-scale: calc(1 - var(--cdhs-scale-ratio))
+            }
+
+            body [data-cdhs*="tablet:up"] {
+                --cdhs-translate-y: calc(var(--cdhs-translate-y-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="tablet:down"] {
+                --cdhs-translate-y: calc(0px - var(--cdhs-translate-y-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="tablet:left"] {
+                --cdhs-translate-x: calc(var(--cdhs-translate-x-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="tablet:right"] {
+                --cdhs-translate-x: calc(0px - var(--cdhs-translate-x-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="tablet:flip-up"] {
+                --cdhs-rotate-x: calc(0deg - var(--cdhs-flip-x-amount))
+            }
+
+            body [data-cdhs*="tablet:flip-down"] {
+                --cdhs-rotate-x: var(--cdhs-flip-x-amount)
+            }
+
+            body [data-cdhs*="tablet:flip-left"] {
+                --cdhs-rotate-y: calc(0deg - var(--cdhs-flip-y-amount))
+            }
+
+            body [data-cdhs*="tablet:flip-right"] {
+                --cdhs-rotate-y: var(--cdhs-flip-y-amount)
+            }
+
+            body [data-cdhs*="tablet:blur"] {
+                --cdhs-blur: var(--cdhs-blur-amount)
+            }
+        }
+
+        @media (min-width:1240px) {
+            body [data-cdhs*="desktop:zoom-in"] {
+                --cdhs-scale: calc(1 + var(--cdhs-scale-ratio))
+            }
+
+            body [data-cdhs*="desktop:zoom-out"] {
+                --cdhs-scale: calc(1 - var(--cdhs-scale-ratio))
+            }
+
+            body [data-cdhs*="desktop:up"] {
+                --cdhs-translate-y: calc(var(--cdhs-translate-y-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="desktop:down"] {
+                --cdhs-translate-y: calc(0px - var(--cdhs-translate-y-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="desktop:left"] {
+                --cdhs-translate-x: calc(var(--cdhs-translate-x-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="desktop:right"] {
+                --cdhs-translate-x: calc(0px - var(--cdhs-translate-x-amount)*var(--cdhs-translate-ratio))
+            }
+
+            body [data-cdhs*="desktop:flip-up"] {
+                --cdhs-rotate-x: calc(0deg - var(--cdhs-flip-x-amount))
+            }
+
+            body [data-cdhs*="desktop:flip-down"] {
+                --cdhs-rotate-x: var(--cdhs-flip-x-amount)
+            }
+
+            body [data-cdhs*="desktop:flip-left"] {
+                --cdhs-rotate-y: calc(0deg - var(--cdhs-flip-y-amount))
+            }
+
+            body [data-cdhs*="desktop:flip-right"] {
+                --cdhs-rotate-y: var(--cdhs-flip-y-amount)
+            }
+
+            body [data-cdhs*="desktop:blur"] {
+                --cdhs-blur: var(--cdhs-blur-amount)
+            }
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body class="_home_container">
+
+    <div class="home-e-287">
+        <div class="home-e-298">
+            <div class="home-e-289"> <i class="fas fa-bars home-e-288"></i></div><span class="home-e-299"><a href="home" class="link" target="_self">
+                    <p>North Georgia Bank</p>
+                </a></span>
+            <div class="home-e-297">
+                <div class="home-e-292"> <i class="fas fa-times home-e-291"></i></div><span class="home-e-290"><a href="home" class="link" target="_self">
+                        <p>Home</p>
+                    </a></span><span class="home-e-296"><a href="about" class="link" target="_self">
+                        <p>About</p>
+                    </a></span><span class="home-e-295"><a href="service" class="link" target="_self">
+                        <p>Service</p>
+                    </a></span><span class="home-e-294"><a href="contact" class="link" target="_self">
+                        <p>Contact</p>
+                    </a></span><button class="home-e-293"><a href="contact" class="link" target="_self">
+                        <p>Start Banking </p>
+                    </a> </button>
+            </div>
+        </div>
+    </div>
+    <div class="home-e-222"> <span class="home-e-223"> <video src="https://assets-v2.codedesign.ai/storage/v1/object/public/65cdaed04368f67150903ffd_9f7cb9ae/asset-af797faf" title="false" poster="https://assets-v2.codedesign.ai/storage/v1/object/public/65cdaed04368f67150903ffd_9f7cb9ae/_video-thumbnails/asset-af797faf-thumb" controls="false" autoplay="true" loop="true" muted="true"> </video></span>
+        <div class="home-e-224">
+            <div class="home-e-237"> </div>
+            <div class="home-e-3">
+                <div class="home-e-2"> <span class="home-e-1">
+                        <p>Bank anywhere, anytime. Securely. </p>
+                    </span><span class="cd-paragraph-clean home-e-4">
+                        <p>Secure banking from your phone or computer, 24/7. Experience seamless financial management with North Georgia Bank. </p>
+                    </span><button class="home-e-182"><a href="contact" class="link" target="_self">
+                            <p>Open Account </p>
+                        </a> </button></div>
+            </div>
+        </div>
+    </div>
+    <div class="home-e-9">
+        <div class="home-e-8">
+            <div class="home-e-6"> <span data-cdhs="right" image-source="ai" class="home-e-5"> <img src="assets/asset-47c26ecf" alt="Image"> </span>
+                <div class="home-e-225"> </div>
+            </div>
+            <div data-cdhs="left" class="home-e-7"> <span class="home-e-18">
+                    <p>Our Mission </p>
+                </span><span class="home-e-19">
+                    <p>About Us </p>
+                </span><span class="cd-paragraph-clean home-e-10">
+                    <p>North Georgia Bank is committed to providing secure, reliable, and convenient banking solutions for our community. </p>
+                </span>
+                <div class="home-e-191">
+                    <div class="home-e-186"> <i class="fas fa-user home-e-193"></i>
+                        <div class="home-e-185"> <span class="home-e-183">
+                                <p>100+ </p>
+                            </span><span class="home-e-184">
+                                <p>Years </p>
+                            </span></div>
+                    </div>
+                    <div class="home-e-190"> <i class="fas fa-users-cog home-e-194"></i>
+                        <div class="home-e-189"> <span class="home-e-187">
+                                <p>50K+ </p>
+                            </span><span class="home-e-188">
+                                <p>Happy Clients </p>
+                            </span></div>
+                    </div>
+                </div><span class="cd-paragraph-clean home-e-13">
+                    <p>We prioritize your financial well-being and strive to exceed your expectations. </p>
+                </span><button class="home-e-181"><a href="contact" class="link" target="_self">
+                        <p>Open Account </p>
+                    </a> </button>
+            </div>
+        </div>
+    </div>
+    <div class="home-e-14">
+        <div class="home-e-17"> <span class="home-e-11">
+                <p>Explore Our Comprehensive Services </p>
+            </span><span class="home-e-20">
+                <p>Banking Made Easy </p>
+            </span></div>
+        <div class="home-e-15">
+            <div data-cdhs="right" class="home-e-16">
+                <div class="home-e-228"> </div>
+                <div class="home-e-26">
+                    <div class="home-e-227"> <i class="fas fa-dollar-sign home-e-195"></i><span class="home-e-12">
+                            <p>Checking Accounts </p>
+                        </span><span class="cd-paragraph-clean home-e-21">
+                            <p>Manage your finances effortlessly with our range of checking account options tailored to your needs. </p>
+                        </span></div>
+                </div>
+            </div>
+            <div data-cdhs="up" class="home-e-28">
+                <div class="home-e-27">
+                    <div class="home-e-229"> <i class="fas fa-file-code home-e-196"></i><span class="home-e-24">
+                            <p>Savings &amp; CDs </p>
+                        </span><span class="cd-paragraph-clean home-e-25">
+                            <p>Grow your savings securely with our high-yield savings accounts and certificates of deposit (CDs). </p>
+                        </span></div>
+                    <div class="home-e-230"> </div>
+                </div>
+            </div>
+            <div data-cdhs="left" class="home-e-30">
+                <div class="home-e-29">
+                    <div class="home-e-231"> <i class="fas fa-arrows-alt home-e-197"></i><span class="home-e-22">
+                            <p>Credit Cards </p>
+                        </span><span class="cd-paragraph-clean home-e-23">
+                            <p>Unlock exclusive rewards and benefits with our range of credit cards designed to suit your lifestyle. </p>
+                        </span></div>
+                    <div class="home-e-232"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-e-43">
+            <div data-cdhs="right" class="home-e-34">
+                <div class="home-e-233"> <i class="fas fa-ruler-combined home-e-198"></i><span class="home-e-32">
+                        <p>Home Loans </p>
+                    </span><span class="cd-paragraph-clean home-e-33">
+                        <p>Find the perfect mortgage solution with our competitive rates and flexible terms for your dream home. </p>
+                    </span></div>
+                <div class="home-e-234"> </div>
+            </div>
+            <div data-cdhs="up" class="home-e-38">
+                <div class="home-e-37"> <i class="fab fa-facebook-messenger home-e-199"></i><span class="home-e-35">
+                        <p>Auto Loans </p>
+                    </span><span class="cd-paragraph-clean home-e-36">
+                        <p>Get behind the wheel faster with our affordable auto loan options and streamlined application process today. </p>
+                    </span></div>
+                <div class="home-e-235"> </div>
+            </div>
+            <div data-cdhs="left" class="home-e-42">
+                <div class="home-e-41"> <i class="fas fa-atlas home-e-200"></i><span class="home-e-39">
+                        <p>Investing </p>
+                    </span><span class="cd-paragraph-clean home-e-40">
+                        <p>Secure your financial future with our expert investment services and personalized strategies for long-term growth. </p>
+                    </span></div>
+                <div class="home-e-236"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-e-50">
+        <div class="home-e-49">
+            <div data-cdhs="right" class="home-e-48"> <span class="home-e-46">
+                    <p>Why Choose Us? </p>
+                </span><span class="home-e-47">
+                    <p>Our Promise </p>
+                </span><span class="cd-paragraph-clean home-e-44">
+                    <p>We are your trusted financial partner. </p>
+                </span>
+                <div class="home-e-57">
+                    <div class="home-e-56">
+                        <div class="home-e-54"> <span class="home-e-53">
+                                <p>100</p>
+                            </span></div><span class="home-e-55">
+                            <p>interest</p>
+                        </span>
+                    </div>
+                    <div class="home-e-65">
+                        <div class="home-e-63"> <span class="home-e-62">
+                                <p>2K</p>
+                            </span></div><span class="home-e-64">
+                            <p>Happy Clients</p>
+                        </span>
+                    </div>
+                    <div class="home-e-61">
+                        <div class="home-e-59"> <span class="home-e-58">
+                                <p>3K</p>
+                            </span></div><span class="home-e-60">
+                            <p>Followers</p>
+                        </span>
+                    </div>
+                </div><span class="cd-paragraph-clean home-e-45">
+                    <p>Experience banking redefined with us. </p>
+                </span><button class="home-e-90"><a href="contact" class="link" target="_self">
+                        <p>Open Account </p>
+                    </a> </button>
+            </div>
+            <div class="home-e-52"> <span data-cdhs="left" image-source="ai" class="home-e-51"> <img src="assets/asset-50439bd9" alt="Image"> </span>
+                <div class="home-e-226"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-e-69">
+        <div class="home-e-68"> <span class="home-e-66">
+                <p>Our Approach </p>
+            </span><span class="home-e-67">
+                <p>How It Works </p>
+            </span></div>
+        <div class="home-e-73">
+            <div data-cdhs="right" class="home-e-72">
+                <div class="home-e-70"> <i class="fas fa-funnel-dollar home-e-201"></i></div><span class="home-e-71">
+                    <p>Sign Up </p>
+                </span>
+            </div><i class="fas fa-angle-double-right home-e-84"></i>
+            <div data-cdhs="right" class="home-e-82">
+                <div class="home-e-80"> <i class="fas fa-file-pdf home-e-202"></i></div><span class="home-e-81">
+                    <p>Link Account </p>
+                </span>
+            </div><i class="fas fa-angle-double-right home-e-83"></i>
+            <div data-cdhs="right" class="home-e-79">
+                <div class="home-e-77"> <i class="fab fa-simplybuilt home-e-203"></i></div><span class="home-e-78">
+                    <p>Verify Identity </p>
+                </span>
+            </div><i class="fas fa-angle-double-right home-e-31"></i>
+            <div data-cdhs="right" class="home-e-76">
+                <div class="home-e-74"> <i class="far fa-hand-point-right home-e-204"></i></div><span class="home-e-75">
+                    <p>Enjoy Banking </p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="home-e-88">
+        <div class="home-e-87">
+            <div class="home-e-89"> <span class="home-e-85">
+                    <p>Our Impact </p>
+                </span><span class="home-e-86">
+                    <p>Success Stories From Our Customers </p>
+                </span><button class="home-e-178"><a href="contact" class="link" target="_self">
+                        <p>Open Account </p>
+                    </a> </button></div>
+        </div>
+        <div class="home-e-91">
+            <div data-cdhs="flip-right" class="home-e-92"> </div>
+            <div data-cdhs="flip-down" class="home-e-95"> </div>
+            <div data-cdhs="flip-up" class="home-e-94"> </div>
+            <div data-cdhs="flip-left" class="home-e-93"> </div>
+        </div>
+    </div>
+    <div class="home-e-99">
+        <div class="home-e-142"> <span class="home-e-140">
+                <p>Our Team </p>
+            </span><span class="home-e-141">
+                <p>Meet Our Experts </p>
+            </span></div>
+        <div class="home-e-108">
+            <div data-cdhs="right" class="home-e-107">
+                <div class="home-e-106"> <span class="home-e-100">
+                        <p>Emily</p>
+                    </span><span class="home-e-105">
+                        <p>CEO </p>
+                    </span>
+                    <div class="home-e-104"> <i class="fab fa-instagram home-e-101"></i><i class="fab fa-facebook-f home-e-103"></i><i class="fab fa-linkedin-in home-e-102"></i></div>
+                </div>
+            </div>
+            <div data-cdhs="up" class="home-e-132">
+                <div class="home-e-131"> <span class="home-e-125">
+                        <p>Emily White </p>
+                    </span><span class="home-e-130">
+                        <p>COO </p>
+                    </span>
+                    <div class="home-e-129"> <i class="fab fa-instagram home-e-126"></i><i class="fab fa-facebook-f home-e-128"></i><i class="fab fa-linkedin-in home-e-127"></i></div>
+                </div>
+            </div>
+            <div data-cdhs="up" class="home-e-124">
+                <div class="home-e-123"> <span class="home-e-117">
+                        <p>David Lee </p>
+                    </span><span class="home-e-122">
+                        <p>CTO </p>
+                    </span>
+                    <div class="home-e-121"> <i class="fab fa-instagram home-e-118"></i><i class="fab fa-facebook-f home-e-120"></i><i class="fab fa-linkedin-in home-e-119"></i></div>
+                </div>
+            </div>
+            <div data-cdhs="left" class="home-e-116">
+                <div class="home-e-115"> <span class="home-e-109">
+                        <p>John Smith </p>
+                    </span><span class="home-e-114">
+                        <p>CTO </p>
+                    </span>
+                    <div class="home-e-113"> <i class="fab fa-instagram home-e-110"></i><i class="fab fa-facebook-f home-e-112"></i><i class="fab fa-linkedin-in home-e-111"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-e-139">
+        <div class="home-e-98"> <span class="home-e-165">
+                <p>TESTIMONIAL</p>
+            </span><span class="home-e-166">
+                <p>What Our Customers Are Saying About Us </p>
+            </span></div>
+        <div class="home-e-138">
+            <div data-cdhs="right" class="home-e-137">
+                <div class="home-e-192"> <i class="fa-solid fa-star home-e-205"></i><i class="fa-solid fa-star home-e-209"></i><i class="fa-solid fa-star home-e-208"></i><i class="fa-solid fa-star home-e-207"></i><i class="fa-solid fa-star-half-stroke home-e-206"></i></div><span class="home-e-133">
+                    <p>North Georgia Bank has transformed my financial life. Their services are top-notch, and their team is always ready to assist. </p>
+                </span>
+                <div class="home-e-136">
+                    <div class="home-e-143"> <span class="home-e-134"> <img src="assets/asset-23f02e8f" alt="Image"> </span></div>
+                    <div class="home-e-135"> <span class="home-e-96">
+                            <p>Aleena Peter</p>
+                        </span><span class="home-e-145">
+                            <p>CEO </p>
+                        </span></div>
+                </div>
+            </div>
+            <div data-cdhs="up" class="home-e-161">
+                <div class="home-e-210"> <i class="fa-solid fa-star home-e-211"></i><i class="fa-solid fa-star home-e-215"></i><i class="fa-solid fa-star home-e-214"></i><i class="fa-solid fa-star home-e-213"></i><i class="fa-regular fa-star-half-stroke home-e-212"></i></div><span class="home-e-171">
+                    <p>Switching to North Georgia Bank was the best decision I made. Their rates are competitive, and their service is unmatched. </p>
+                </span>
+                <div class="home-e-160">
+                    <div class="home-e-159"> <span class="home-e-158"> <img src="assets/asset-279040ce" alt="Image"> </span></div>
+                    <div class="home-e-157"> <span class="home-e-155">
+                            <p>Alex</p>
+                        </span><span class="home-e-156">
+                            <p>COO </p>
+                        </span></div>
+                </div>
+            </div>
+            <div data-cdhs="left" class="home-e-153">
+                <div class="home-e-216"> <i class="fa-solid fa-star home-e-217"></i><i class="fa-solid fa-star home-e-221"></i><i class="fa-solid fa-star home-e-220"></i><i class="fa-solid fa-star home-e-219"></i><i class="fa-solid fa-star-half-stroke home-e-218"></i></div><span class="home-e-146">
+                    <p>I highly recommend North Georgia Bank. Their customer service is excellent, and their online platform is user-friendly. </p>
+                </span>
+                <div class="home-e-152">
+                    <div class="home-e-151"> <span class="home-e-150"> <img src="assets/asset-5768aaef" alt="Image"> </span></div>
+                    <div class="home-e-149"> <span class="home-e-147">
+                            <p>Sam </p>
+                        </span><span class="home-e-148">
+                            <p>CFO </p>
+                        </span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-e-238">
+        <div class="home-e-239">
+            <div class="home-e-240">
+                <div class="home-e-242">
+                    <div class="home-e-241"> </div><span class="home-e-243">
+                        <p>FAQs </p>
+                    </span><span class="home-e-244">
+                        <p>Have questions? We've got answers. Check out our frequently asked questions below to find what you need. </p>
+                    </span>
+                </div>
+            </div>
+            <div class="home-e-245">
+                <div class="home-e-246"> <span class="home-e-247">
+                        <p>How do I open an account? </p>
+                    </span><span class="home-e-248">
+                        <p>You can easily open an account online through our website or visit any of our branch locations to speak with a representative. </p>
+                    </span></div>
+                <div class="home-e-257"> <span class="home-e-255">
+                        <p>What if I forget my password? </p>
+                    </span><span class="home-e-256">
+                        <p>You can reset your password through the 'Forgot Password' link on the login page. Follow the instructions to regain access. </p>
+                    </span></div>
+                <div class="home-e-254"> <span class="home-e-252">
+                        <p>Is online banking secure? </p>
+                    </span><span class="home-e-253">
+                        <p>Yes, we use advanced encryption and security measures to protect your online banking information and transactions. </p>
+                    </span></div>
+                <div class="home-e-251"> <span class="home-e-249">
+                        <p>What are your interest rates? </p>
+                    </span><span class="home-e-250">
+                        <p>Our interest rates vary depending on the type of account and current market conditions. Check our website for details. </p>
+                    </span></div>
+            </div>
+        </div>
+    </div>
+    <div class="home-e-163">
+        <div class="home-e-162">
+            <div data-cdhs="right" class="home-e-164"> <span class="home-e-144">
+                    <p>Our Blog </p>
+                </span><span class="home-e-97">
+                    <p>Insights For Financial Success </p>
+                </span></div>
+            <div data-cdhs="left" class="home-e-180">
+                <div class="home-e-177"> <span class="home-e-172"> <img src="assets/asset-58841334" alt="Image"> </span>
+                    <div class="home-e-176">
+                        <div class="home-e-175"> <span class="home-e-174">
+                                <p>Financial Planning Tips </p>
+                            </span><span class="home-e-173">
+                                <p>Discover the latest trends in personal finance and how to make informed decisions for your future. </p>
+                            </span></div>
+                    </div>
+                </div>
+                <div class="home-e-167"> <span class="home-e-168"> <img src="assets/asset-4d91ae9f" alt="Image"> </span>
+                    <div class="home-e-169">
+                        <div class="home-e-170"> <span class="home-e-179">
+                                <p>Investment Strategies </p>
+                            </span><span class="home-e-154">
+                                <p>Explore strategies for saving, investing, and managing your money effectively in today's economy. </p>
+                            </span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-e-259">
+        <div class="container home-e-274">
+            <div class="home-e-273"> <span class="home-e-285"><a href="home" class="link" target="_self">
+                        <p>North Georgia Bank </p>
+                    </a> </span>
+                <div class="home-e-272" data-clientid="home-e-272" data-component-type="form-component-v1"> <input required="true" pattern="^[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,}$" placeholder="Do you have any questions?" type="email" class="home-e-286" data-clientid="home-e-286"><button class="home-e-271" data-clientid="home-e-271"><a href="contact" class="link" target="_self">
+                            <p>Contact Us</p>
+                        </a></button></div>
+            </div>
+            <div class="home-e-270">
+                <div class="home-e-263">
+                    <div class="home-e-262"> <span class="cd-paragraph-clean home-e-260">
+                            <p>Menu</p>
+                        </span><span class="cd-paragraph-clean home-e-261"><a href="home" class="link" target="_self">
+                                <p>Home</p>
+                            </a></span><span class="cd-paragraph-clean home-e-278"><a href="about" class="link" target="_self">
+                                <p>About</p>
+                            </a></span><span class="cd-paragraph-clean home-e-277"><a href="service" class="link" target="_self">
+                                <p>Service</p>
+                            </a></span><span class="cd-paragraph-clean home-e-276"><a href="contact" class="link" target="_self">
+                                <p>Contact</p>
+                            </a></span></div>
+                </div>
+                <div class="home-e-269">
+                    <div class="home-e-268"> <span class="cd-paragraph-clean home-e-264">
+                            <p>Address</p>
+                        </span><span class="cd-paragraph-clean home-e-267"><a href="tel:0000000000" class="link" target="_self">
+                                <p>555-123-4567 </p>
+                            </a> </span><span class="cd-paragraph-clean home-e-266"><a href="mailto:example@email.com" class="link" target="_self">
+                                <p>support@northgeorgiabank.com </p>
+                            </a> </span><span class="cd-paragraph-clean home-e-265"><a href="tel:0000000000" class="link" target="_self">
+                                <p>123 Main Street, Atlanta, GA 30303 </p>
+                            </a> </span></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-e-275"> </div>
+        <div class="home-e-284">
+            <div class="home-e-279"><a href="https://www.facebook.com/" class="link" target="_blank"><svg width="auto" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ffffff" d="M19.254 2C15.312 2 13 4.082 13 8.826V13H8v5h5v12h5V18h4l1-5h-5V9.672C18 7.885 18.583 7 20.26 7H23V2.205C22.526 2.141 21.145 2 19.254 2"></path>
+                    </svg></a></div>
+            <div class="home-e-283"><a href="https://twitter.com/i/flow/login" class="link" target="_blank"><svg width="auto" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ffffff" d="M28 8.559a9.813 9.813 0 0 1-2.828.773a4.94 4.94 0 0 0 2.164-2.723a9.92 9.92 0 0 1-3.125 1.196a4.924 4.924 0 0 0-8.52 3.367c0 .387.043.762.13 1.121A13.957 13.957 0 0 1 5.67 7.148a4.885 4.885 0 0 0-.667 2.477c0 1.707.867 3.215 2.191 4.098a4.895 4.895 0 0 1-2.23-.618v.063a4.922 4.922 0 0 0 3.95 4.828a4.902 4.902 0 0 1-2.224.086a4.932 4.932 0 0 0 4.598 3.422A9.875 9.875 0 0 1 4 23.539a13.924 13.924 0 0 0 7.547 2.215c9.058 0 14.012-7.504 14.012-14.012c0-.21-.008-.426-.016-.637A10.085 10.085 0 0 0 28 8.56z"></path>
+                    </svg></a></div>
+            <div class="home-e-282"><a href="https://www.linkedin.com/login" class="link" target="_blank"><svg width="auto" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ffffff" d="M8.643 4A2.641 2.641 0 0 0 6 6.64C6 8.1 7.183 9.31 8.64 9.31c1.459 0 2.643-1.21 2.643-2.668A2.64 2.64 0 0 0 8.643 4m12.892 7c-2.219 0-3.488 1.16-4.098 2.314h-.064v-2.003H13V26h4.557v-7.271c0-1.916.144-3.768 2.515-3.768c2.337 0 2.371 2.185 2.371 3.889V26H27v-8.068C27 13.984 26.151 11 21.535 11m-15.172.31V26h4.56V11.31z"></path>
+                    </svg></a></div>
+            <div class="home-e-281"><a href="https://www.instagram.com/accounts/login/" class="link" target="_blank"><svg width="auto" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ffffff" d="M11.469 5C7.918 5 5 7.914 5 11.469v9.062C5 24.082 7.914 27 11.469 27h9.062C24.082 27 27 24.086 27 20.531V11.47C27 7.918 24.086 5 20.531 5zm0 2h9.062A4.463 4.463 0 0 1 25 11.469v9.062A4.463 4.463 0 0 1 20.531 25H11.47A4.463 4.463 0 0 1 7 20.531V11.47A4.463 4.463 0 0 1 11.469 7m10.437 2.188a.902.902 0 0 0-.906.906c0 .504.402.906.906.906a.902.902 0 0 0 .907-.906a.902.902 0 0 0-.907-.906M16 10c-3.3 0-6 2.7-6 6s2.7 6 6 6s6-2.7 6-6s-2.7-6-6-6m0 2c2.223 0 4 1.777 4 4s-1.777 4-4 4s-4-1.777-4-4s1.777-4 4-4"></path>
+                    </svg></a></div>
+            <div class="home-e-280"><a href="https://www.youtube.com/" class="link" target="_blank"><svg width="auto" height="auto" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ffffff" d="M16 6c-3.766 0-7.094.39-9.125.688c-1.68.246-3.035 1.511-3.344 3.187C3.27 11.301 3 13.387 3 16s.27 4.7.531 6.125c.309 1.676 1.664 2.945 3.344 3.188c2.04.296 5.379.687 9.125.687c3.746 0 7.086-.39 9.125-.688c1.68-.242 3.035-1.511 3.344-3.187c.261-1.43.531-3.52.531-6.125s-.266-4.695-.531-6.125c-.309-1.676-1.664-2.941-3.344-3.188C23.094 6.391 19.765 6 16 6m0 2c3.633 0 6.879.371 8.844.656A1.966 1.966 0 0 1 26.5 10.25c.242 1.32.5 3.277.5 5.75c0 2.469-.258 4.43-.5 5.75a1.957 1.957 0 0 1-1.656 1.594C22.87 23.629 19.609 24 16 24c-3.61 0-6.875-.371-8.844-.656A1.962 1.962 0 0 1 5.5 21.75C5.258 20.43 5 18.477 5 16c0-2.48.258-4.43.5-5.75a1.962 1.962 0 0 1 1.656-1.594C9.117 8.371 12.367 8 16 8m-3 2.281V21.72l1.5-.844l7-4L23 16l-1.5-.875l-7-4zm2 3.438L18.969 16L15 18.281z"></path>
+                    </svg></a></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function() {
+            console.log('Event listeners script initialized');
+
+            // Global state for slider components
+            const sliderStates = {};
+
+            // Helper function to traverse until slider main element
+            function traverseTillSliderMainElementCondition(element) {
+                if (!element || element.nodeType !== Node.ELEMENT_NODE) return false;
+
+                // Check if this element has the slider-component-v1 componentType
+                const componentType = element.getAttribute("data-component-type");
+                return componentType === "slider-component-v1";
+            }
+
+            // Show slide function
+            function showSlide({
+                currentIndex,
+                slideElements = [],
+                slidesWrapperWidth,
+                identifier
+            }) {
+                console.log(identifier, "identifier known")
+                if (identifier === "home-e-16") {
+                    console.log("showSlide called --new", currentIndex, slideElements, slidesWrapperWidth, identifier)
+                }
+                if (typeof currentIndex === "undefined") return;
+                if (!slidesWrapperWidth) return;
+
+                slideElements.forEach((item) => {
+                    if (item.style) {
+                        item.style.transform = `translateX(-${currentIndex * slidesWrapperWidth}px)`;
+                    }
+                });
+            }
+
+            // Slider function definitions
+            const fnDefs = {
+                onMountSliderForAutoplay: (targetId) => {
+                    console.log('onMountSliderForAutoplay called for:', targetId);
+                    const doc = document;
+                    let elem = doc.querySelector('.' + targetId);
+
+                    while (elem && !traverseTillSliderMainElementCondition(elem)) {
+                        elem = elem.parentNode;
+                    }
+
+                    if (!elem) {
+                        console.error('No slider component found for onMountSliderForAutoplay');
+                        return;
+                    }
+
+                    // Get the client ID from the element's class name (e.g., home-e-16)
+                    const classes = elem.className.split(' ');
+                    const elemClientId = classes.find(c => c.includes('-e-'));
+                    if (!elemClientId) {
+                        console.error('No client ID found in element classes:', classes);
+                        return;
+                    }
+
+                    const sliderData = sliderStates[elemClientId]?.sliderData || {};
+                    const componentStructureMap = sliderStates[elemClientId]?.componentStructureMap || {};
+
+                    if (!componentStructureMap.slidesWrapper) return;
+
+                    const slidesWrapperId = componentStructureMap.slidesWrapper;
+                    const slidesWrapperElem = doc?.querySelector('.' + slidesWrapperId);
+                    const slidesWrapperWidth = slidesWrapperElem?.getBoundingClientRect?.()?.width;
+                    const slides = [...(slidesWrapperElem?.childNodes || [])].filter(node =>
+                        node.nodeType === Node.ELEMENT_NODE &&
+                        node.className &&
+                        node.className.includes('cd-slider-v1--slide')
+                    );
+                    let slidesLength = slides.length;
+
+                    const {
+                        sliderAutoPlay = false,
+                            sliderAutoplayStartDelay: START_DELAY = 2000,
+                            slideDuration: SLIDE_DELAY = 2000,
+                            sliderAutoplayStopAfter: STOP_AFTER = 60000,
+                    } = sliderData;
+
+                    if (!sliderAutoPlay) return;
+
+                    // Function to update slide
+                    const updateSlide = () => {
+                        let currentIndex = sliderStates[elemClientId]?.currentIndex || 0;
+                        let newIndex = ((currentIndex) + 1) % slidesLength;
+                        // Update state
+                        if (!sliderStates[elemClientId]) sliderStates[elemClientId] = {};
+                        sliderStates[elemClientId].currentIndex = newIndex;
+
+                        showSlide({
+                            currentIndex: newIndex,
+                            slideElements: slides,
+                            slidesWrapperWidth,
+                        });
+                    };
+
+                    // Initial delay before starting the slide updates
+                    setTimeout(() => {
+                        updateSlide(); // Update the slide once initially
+
+                        // Store the interval ID to clear it later
+                        const intervalId = setInterval(updateSlide, Math.abs(SLIDE_DELAY));
+
+                        // Stop the slide updates after specified time
+                        setTimeout(() => {
+                            clearInterval(intervalId);
+                        }, Math.abs(STOP_AFTER));
+                    }, Math.abs(START_DELAY));
+                },
+
+                nextSlide: (e) => {
+                    console.log('nextSlide called');
+                    e?.preventDefault();
+
+                    let elem = e.currentTarget;
+
+                    while (elem && !traverseTillSliderMainElementCondition(elem)) {
+                        elem = elem.parentNode;
+                    }
+
+                    if (!elem) {
+                        console.error('No slider component found for nextSlide');
+                        return;
+                    }
+
+                    // Get the client ID from the element's class name (e.g., home-e-16)
+                    const classes = elem.className.split(' ');
+                    const elemClientId = classes.find(c => c.includes('-e-'));
+                    if (!elemClientId) {
+                        console.error('No client ID found in element classes:', classes);
+                        return;
+                    }
+
+                    const sliderStateData = sliderStates[elemClientId];
+                    if (!sliderStateData) {
+                        console.error('No slider state found for element:', elemClientId, elem);
+                        return;
+                    }
+
+                    const sliderData = sliderStateData.sliderData || {};
+                    const componentStructureMap = sliderStateData.componentStructureMap || {};
+
+                    if (!componentStructureMap.slidesWrapper) {
+                        console.error('No slidesWrapper found in componentStructureMap:', componentStructureMap);
+                        return;
+                    }
+
+                    const slidesWrapperId = componentStructureMap.slidesWrapper;
+                    const doc = document;
+                    const slidesWrapperElem = doc?.querySelector('.' + slidesWrapperId);
+                    const slidesWrapperWidth = slidesWrapperElem?.getBoundingClientRect?.()?.width;
+                    const slides = [...(slidesWrapperElem?.childNodes || [])].filter(node =>
+                        node.nodeType === Node.ELEMENT_NODE &&
+                        node.className &&
+                        node.className.includes('cd-slider-v1--slide')
+                    );
+                    let currentIndex = sliderStates[elemClientId]?.currentIndex || 0;
+                    let slidesLength = slides.length;
+                    let newIndex = ((currentIndex) + 1) % slidesLength;
+                    // Update state
+                    if (!sliderStates[elemClientId]) sliderStates[elemClientId] = {};
+                    sliderStates[elemClientId].currentIndex = newIndex;
+
+                    showSlide({
+                        currentIndex: newIndex,
+                        slideElements: slides,
+                        slidesWrapperWidth,
+                        identifier: elemClientId
+                    });
+                },
+
+                prevSlide: (e) => {
+                    console.log('prevSlide called');
+                    e?.preventDefault();
+
+                    let elem = e.currentTarget;
+
+                    while (elem && !traverseTillSliderMainElementCondition(elem)) {
+                        elem = elem.parentNode;
+                    }
+
+                    if (!elem) {
+                        console.error('No slider component found for prevSlide');
+                        return;
+                    }
+
+                    // Get the client ID from the element's class name (e.g., home-e-16)
+                    const classes = elem.className.split(' ');
+                    const elemClientId = classes.find(c => c.includes('-e-'));
+                    if (!elemClientId) {
+                        console.error('No client ID found in element classes:', classes);
+                        return;
+                    }
+
+                    const sliderStateData = sliderStates[elemClientId];
+                    if (!sliderStateData) {
+                        console.error('No slider state found for element:', elemClientId);
+                        return;
+                    }
+
+                    const sliderData = sliderStateData.sliderData || {};
+                    const componentStructureMap = sliderStateData.componentStructureMap || {};
+
+                    if (!componentStructureMap.slidesWrapper) {
+                        console.error('No slidesWrapper found in componentStructureMap:', componentStructureMap);
+                        return;
+                    }
+
+                    const slidesWrapperId = componentStructureMap.slidesWrapper;
+                    const doc = document;
+                    const slidesWrapperElem = doc?.querySelector('.' + slidesWrapperId);
+                    const slidesWrapperWidth = slidesWrapperElem?.getBoundingClientRect?.()?.width;
+                    const slides = [...(slidesWrapperElem?.childNodes || [])].filter(node =>
+                        node.nodeType === Node.ELEMENT_NODE &&
+                        node.className &&
+                        node.className.includes('cd-slider-v1--slide')
+                    );
+                    let currentIndex = sliderStates[elemClientId]?.currentIndex || 0;
+                    let slidesLength = slides.length;
+                    let newIndex = ((currentIndex) - 1 + slidesLength) % slidesLength;
+
+                    // Update state
+                    if (!sliderStates[elemClientId]) sliderStates[elemClientId] = {};
+                    sliderStates[elemClientId].currentIndex = newIndex;
+
+                    showSlide({
+                        currentIndex: newIndex,
+                        slideElements: slides,
+                        slidesWrapperWidth,
+                    });
+                }
+            };
+
+            // Helper function to parse CSS code
+            function parseCSS(cssString) {
+                if (!cssString) return {};
+                const result = {};
+                const declarations = cssString.split(';');
+
+                for (let i = 0; i < declarations.length; i++) {
+                    const declaration = declarations[i].trim();
+                    if (!declaration) continue;
+
+                    const colonPos = declaration.indexOf(':');
+                    if (colonPos === -1) continue;
+
+                    const property = declaration.substring(0, colonPos).trim();
+                    const value = declaration.substring(colonPos + 1).trim();
+                    result[property] = value;
+                }
+
+                return result;
+            }
+
+            // Helper function to generate CSS string
+            function generateCSSString(cssObject) {
+                if (!cssObject) return '';
+                return Object.keys(cssObject)
+                    .filter(key => cssObject[key] !== undefined && cssObject[key] !== null)
+                    .map(key => `${key}: ${cssObject[key]}`)
+                    .join('; ');
+            }
+
+            // Handle link click action
+            const handleLinkClickAction = (e) => {
+                console.log('Link click action triggered', e.currentTarget);
+
+                const isClickedOnLink = e.target.closest("a");
+                if (isClickedOnLink && e.currentTarget !== e.target) {
+                    console.log('Click on link inside component, allowing default behavior');
+                    return; // Allow the link click to proceed normally
+                }
+
+                const classes = e.currentTarget.className.split(' ');
+                console.log('Element classes:', classes);
+
+                const selectedId = classes.find(c => c.includes('-e-'));
+                console.log('Selected ID from classes:', selectedId);
+                if (!selectedId) {
+                    console.log('No valid ID found in classes, aborting');
+                    return;
+                }
+
+                const linkActionObject = e.currentTarget.getAttribute('data-link-action');
+                console.log('Link action object (raw):', linkActionObject);
+                if (!linkActionObject) {
+                    console.log('No data-link-action attribute found, aborting');
+                    return;
+                }
+
+                try {
+                    const actionData = JSON.parse(linkActionObject);
+                    console.log('Parsed action data:', actionData);
+
+                    const whitelist = [
+                        "margin-left", "margin-top", "margin-right", "margin-bottom",
+                        "width", "height", "minWidth", "maxWidth", "minHeight", "maxHeight",
+                        "display", "position"
+                    ];
+
+                    Object.values(actionData).forEach((actionObject) => {
+                        console.log('Processing action:', actionObject);
+                        const {
+                            targetElementId,
+                            cssCode,
+                            toggleBehaviour = false
+                        } = actionObject;
+                        if (!targetElementId) {
+                            console.log('No targetElementId found, skipping action');
+                            return;
+                        }
+
+                        // Find target element by class name (mapped from ID)
+                        const targetSelector = '.' + targetElementId;
+                        console.log('Looking for target element with selector:', targetSelector);
+                        const targetElement = document.querySelector(targetSelector);
+
+                        if (targetElement) {
+                            console.log('Target element found:', targetElement);
+                            const styleNodeId = `style-${targetElementId}`;
+                            let styleNode = document.querySelector(`#${styleNodeId}`);
+                            console.log('Style node exists:', !!styleNode);
+
+                            // Create data attribute to track toggle state
+                            const toggleStateAttr = "data-toggle-state";
+                            const isToggled = targetElement.getAttribute(toggleStateAttr) === "true";
+                            console.log('Is element already toggled:', isToggled);
+
+                            if (!styleNode) {
+                                console.log('Creating new style node');
+                                styleNode = document.createElement("style");
+                                styleNode.id = styleNodeId;
+                                targetElement.appendChild(styleNode);
+                            }
+
+                            const existingCSS = styleNode.textContent || "";
+                            const existingCSSObject = parseCSS(existingCSS);
+                            const newCSSObject = parseCSS(cssCode);
+                            console.log('Existing CSS object:', existingCSSObject);
+                            console.log('New CSS object:', newCSSObject);
+
+                            if (toggleBehaviour && isToggled) {
+                                console.log('Toggle behavior - reverting changes');
+                                // Revert changes if toggled
+                                whitelist.forEach((property) => {
+                                    if (targetElement.style[property]) {
+                                        targetElement.style[property] =
+                                            targetElement.getAttribute(`data-original-${property}`) || "";
+                                        targetElement.removeAttribute(`data-original-${property}`);
+                                    }
+                                });
+
+                                // Remove added CSS properties while keeping original styles
+                                const originalStyles = JSON.parse(
+                                    targetElement.getAttribute("data-original-styles") || "{}"
+                                );
+                                styleNode.textContent = `${targetSelector} { ${generateCSSString(
+                  originalStyles
+                )} }`;
+
+                                targetElement.setAttribute(toggleStateAttr, "false");
+                            } else {
+                                console.log('Applying new styles');
+                                // Store original styles before applying new ones
+                                if (toggleBehaviour) {
+                                    console.log('Toggle behavior - storing original styles');
+                                    whitelist.forEach((property) => {
+                                        targetElement.style[property] &&
+                                            targetElement.setAttribute(
+                                                `data-original-${property}`,
+                                                targetElement.style[property] || ""
+                                            );
+
+                                        if (newCSSObject.hasOwnProperty(property)) {
+                                            targetElement.setAttribute(
+                                                `data-original-${property}`,
+                                                targetElement.style[property] || ""
+                                            );
+                                            targetElement.style.setProperty(property, newCSSObject[property]);
+                                            delete newCSSObject[property];
+                                        }
+                                    });
+
+                                    // Store original non-whitelisted styles
+                                    targetElement.setAttribute(
+                                        "data-original-styles",
+                                        JSON.stringify(existingCSSObject)
+                                    );
+                                } else {
+                                    console.log('Direct style application (no toggle)');
+                                    // Non-toggle behavior - apply styles directly
+                                    whitelist.forEach((property) => {
+                                        if (newCSSObject.hasOwnProperty(property)) {
+                                            console.log('Setting style property:', property, newCSSObject[property]);
+                                            targetElement.style.setProperty(property, newCSSObject[property]);
+                                            delete newCSSObject[property];
+                                        }
+                                    });
+                                }
+
+                                // Apply remaining CSS properties
+                                const mergedCSSObject = {
+                                    ...existingCSSObject,
+                                    ...newCSSObject
+                                };
+                                const mergedCSSString = generateCSSString(mergedCSSObject);
+                                console.log('Merged CSS string:', mergedCSSString);
+                                styleNode.textContent = `${targetSelector} { ${mergedCSSString} }`;
+
+                                if (toggleBehaviour) {
+                                    targetElement.setAttribute(toggleStateAttr, "true");
+                                }
+                            }
+                        } else {
+                            console.error('Target element not found:', targetSelector);
+                        }
+                    });
+                } catch (error) {
+                    console.error('Error handling link action:', error);
+                }
+            };
+
+            // Add event listeners to components
+            document.addEventListener('DOMContentLoaded', function() {
+                console.log('DOM content loaded, attaching event listeners');
+
+                // Initialize slider states first
+
+                // Initialize states for main slider containers
+
+
+
+
+                // Setup slider onClick event listeners
+
+
+                // Setup slider onMount functions
+
+
+                // Setup other event listeners
+
+                // Add click listener for home-e-289
+                const home_e_289Element = document.querySelector('.home-e-289');
+                console.log('Looking for element with class: .home-e-289', home_e_289Element);
+
+                if (home_e_289Element) {
+                    console.log('Adding click listener to home-e-289');
+                    home_e_289Element.addEventListener('click', handleLinkClickAction);
+
+                    // Store link action data if it exists and has toggle behavior
+                    const linkActionData = {
+                        "action-c97c5144-2813-40a2-935b-3a75f1db91e9": {
+                            "actionId": "action-c97c5144-2813-40a2-935b-3a75f1db91e9",
+                            "titleType": "onClick",
+                            "actionType": "onClick",
+                            "selectedUpdateOption": "showElement",
+                            "targetElementId": "home-e-297",
+                            "cssCode": "display:flex;",
+                            "toggleBehaviour": false
+                        }
+                    };
+
+                    // Check if any action has toggleBehaviour=true
+                    const hasToggleAction = Object.values(linkActionData).some(action => action.toggleBehaviour === true);
+
+                    console.log('Link action data for home-e-289:', linkActionData);
+                    console.log('Has toggle behavior:', hasToggleAction);
+
+                    // Only add data-link-action for all actions 
+                    if (Object.keys(linkActionData).length > 0) {
+                        console.log('Setting data-link-action attribute');
+                        home_e_289Element.setAttribute('data-link-action', JSON.stringify(linkActionData));
+                    }
+                }
+
+                // Add click listener for home-e-291
+                const home_e_291Element = document.querySelector('.home-e-291');
+                console.log('Looking for element with class: .home-e-291', home_e_291Element);
+
+                if (home_e_291Element) {
+                    console.log('Adding click listener to home-e-291');
+                    home_e_291Element.addEventListener('click', handleLinkClickAction);
+
+                    // Store link action data if it exists and has toggle behavior
+                    const linkActionData = {
+                        "action-1f70c54b-681e-4a07-b839-4acd8747f5cb": {
+                            "actionId": "action-1f70c54b-681e-4a07-b839-4acd8747f5cb",
+                            "titleType": "onClick",
+                            "actionType": "onClick",
+                            "selectedUpdateOption": "hideElement",
+                            "targetElementId": "home-e-297",
+                            "cssCode": "display:none;",
+                            "toggleBehaviour": false
+                        }
+                    };
+
+                    // Check if any action has toggleBehaviour=true
+                    const hasToggleAction = Object.values(linkActionData).some(action => action.toggleBehaviour === true);
+
+                    console.log('Link action data for home-e-291:', linkActionData);
+                    console.log('Has toggle behavior:', hasToggleAction);
+
+                    // Only add data-link-action for all actions 
+                    if (Object.keys(linkActionData).length > 0) {
+                        console.log('Setting data-link-action attribute');
+                        home_e_291Element.setAttribute('data-link-action', JSON.stringify(linkActionData));
+                    }
+                }
+
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        (function() {
+            console.log("Form submission script loaded");
+            var formsData = [{
+                "formId": "home-e-272",
+                "formClassName": "home-e-272",
+                "formElements": [{
+                    "client_id": "home-e-286",
+                    "className": "home-e-286",
+                    "props": {
+                        "componentData": {
+                            "placeholder": "Do you have any questions?"
+                        }
+                    },
+                    "name": "Input"
+                }, {
+                    "client_id": "home-e-271",
+                    "className": "home-e-271",
+                    "props": {
+                        "componentData": {}
+                    },
+                    "name": "Button"
+                }]
+            }];
+            var mapping = {
+                "SpanSoxJ": "home-e-1",
+                "DivG1Hs": "home-e-2",
+                "Div5uHU": "home-e-3",
+                "ParagraphiiBb": "home-e-4",
+                "Imageh3f7fjuC": "home-e-5",
+                "DivixVl": "home-e-6",
+                "Divm6En": "home-e-7",
+                "DivCLc9": "home-e-8",
+                "Div5I0b": "home-e-9",
+                "ParagraphdkIe": "home-e-10",
+                "SpanAZNq": "home-e-11",
+                "Span2bPQ": "home-e-12",
+                "ParagraphHHKu": "home-e-13",
+                "DivhJkQ": "home-e-14",
+                "DivWYIg": "home-e-15",
+                "Divr8Iw": "home-e-16",
+                "ContainergSNb": "home-e-17",
+                "SpanW6ew": "home-e-18",
+                "SpanveSW": "home-e-19",
+                "SpanHvlH": "home-e-20",
+                "ParagraphNtMR": "home-e-21",
+                "SpanFgqH": "home-e-22",
+                "Paragraphs1k2": "home-e-23",
+                "SpanIM95": "home-e-24",
+                "ParagraphqXyZ": "home-e-25",
+                "DivIr1L": "home-e-26",
+                "DivtdVy": "home-e-27",
+                "DiviReb": "home-e-28",
+                "DivmLxe": "home-e-29",
+                "Div9j5v": "home-e-30",
+                "FontsSNe1": "home-e-31",
+                "SpanRIz3": "home-e-32",
+                "Paragraph9cj4": "home-e-33",
+                "DivZ0VO": "home-e-34",
+                "SpanaqVU": "home-e-35",
+                "ParagraphemSn": "home-e-36",
+                "Divt0P0": "home-e-37",
+                "DivQXrb": "home-e-38",
+                "SpannXOx": "home-e-39",
+                "ParagraphF2Sf": "home-e-40",
+                "Diva9Zw": "home-e-41",
+                "DivzBNz": "home-e-42",
+                "Div8L8D": "home-e-43",
+                "ParagraphwsQY": "home-e-44",
+                "ParagraphQ2bA": "home-e-45",
+                "SpanwurL": "home-e-46",
+                "Spanl3qu": "home-e-47",
+                "DivnC7S": "home-e-48",
+                "DivkS4v": "home-e-49",
+                "Div35EL": "home-e-50",
+                "Imageh3f7vein": "home-e-51",
+                "DivNkic": "home-e-52",
+                "Spanum0E": "home-e-53",
+                "DivDTVw": "home-e-54",
+                "SpanNhEI": "home-e-55",
+                "DivaPJW": "home-e-56",
+                "Div2K6P": "home-e-57",
+                "SpanTphq": "home-e-58",
+                "DivJ02o": "home-e-59",
+                "Span9lvZ": "home-e-60",
+                "DivbDSz": "home-e-61",
+                "SpanTZTF": "home-e-62",
+                "Dive1Nq": "home-e-63",
+                "SpanPVyI": "home-e-64",
+                "DivBxyT": "home-e-65",
+                "Span22LN": "home-e-66",
+                "SpantxLd": "home-e-67",
+                "ContainerQii3": "home-e-68",
+                "DivDUdy": "home-e-69",
+                "Divn880": "home-e-70",
+                "SpanSd0F": "home-e-71",
+                "Divh7n7": "home-e-72",
+                "ContaineryTDV": "home-e-73",
+                "DivCpHn": "home-e-74",
+                "SpanWe0k": "home-e-75",
+                "DivCyaL": "home-e-76",
+                "DivHPHv": "home-e-77",
+                "SpanG1cw": "home-e-78",
+                "DivuRh5": "home-e-79",
+                "DivZksT": "home-e-80",
+                "SpanTSAF": "home-e-81",
+                "DivGagv": "home-e-82",
+                "Fonts0FEE": "home-e-83",
+                "Fontsj612": "home-e-84",
+                "Span1VSW": "home-e-85",
+                "SpanOmkv": "home-e-86",
+                "Containerzijd": "home-e-87",
+                "DivtJ6X": "home-e-88",
+                "DivuIGo": "home-e-89",
+                "Button0CHp": "home-e-90",
+                "DivoTkq": "home-e-91",
+                "SectionaZfU": "home-e-92",
+                "SectionBWPg": "home-e-93",
+                "Section0vWp": "home-e-94",
+                "SectionBK09": "home-e-95",
+                "SpanAZ8W": "home-e-96",
+                "SpanZGfI": "home-e-97",
+                "ContainerNTfI": "home-e-98",
+                "DivNOvE": "home-e-99",
+                "SpanyG7P": "home-e-100",
+                "FontsBoWz": "home-e-101",
+                "FontspQAF": "home-e-102",
+                "FontsjgA4": "home-e-103",
+                "DivqdMN": "home-e-104",
+                "SpanKzVD": "home-e-105",
+                "DivBRIt": "home-e-106",
+                "Divu5NM": "home-e-107",
+                "DivDXJD": "home-e-108",
+                "Span1CVz": "home-e-109",
+                "FontsmdKU": "home-e-110",
+                "FontsfHDd": "home-e-111",
+                "Fonts9ONt": "home-e-112",
+                "Div1ygC": "home-e-113",
+                "SpanebCx": "home-e-114",
+                "DivYhul": "home-e-115",
+                "DivQOek": "home-e-116",
+                "SpanEAP2": "home-e-117",
+                "FontsGLt9": "home-e-118",
+                "FontsIhh0": "home-e-119",
+                "FontsAeL3": "home-e-120",
+                "Div4Sd0": "home-e-121",
+                "SpanDMJ4": "home-e-122",
+                "DivLhDi": "home-e-123",
+                "Div71UK": "home-e-124",
+                "SpanvLrB": "home-e-125",
+                "FontstbNi": "home-e-126",
+                "FontsZvfx": "home-e-127",
+                "FontsbIxh": "home-e-128",
+                "DivOC1V": "home-e-129",
+                "Span99Qq": "home-e-130",
+                "Div8SuN": "home-e-131",
+                "DivPR8e": "home-e-132",
+                "Span643Z": "home-e-133",
+                "undraw_male_avatar_g98dKZ2y": "home-e-134",
+                "Div47wL": "home-e-135",
+                "Divc8li": "home-e-136",
+                "DivGucZ": "home-e-137",
+                "DivtagI": "home-e-138",
+                "DivObGV": "home-e-139",
+                "SpanOCP3": "home-e-140",
+                "SpanGCY8": "home-e-141",
+                "Container6pX6": "home-e-142",
+                "DivztoZ": "home-e-143",
+                "Spanjt2i": "home-e-144",
+                "Span4nWj": "home-e-145",
+                "SpanPHBA": "home-e-146",
+                "SpanyyDt": "home-e-147",
+                "SpanOGFg": "home-e-148",
+                "DivextI": "home-e-149",
+                "undraw_male_avatar_g98dmxfY": "home-e-150",
+                "DivmUwJ": "home-e-151",
+                "Div9R92": "home-e-152",
+                "DivTg2c": "home-e-153",
+                "SpanETaq": "home-e-154",
+                "SpanHBmy": "home-e-155",
+                "Span1WVO": "home-e-156",
+                "DivyT7r": "home-e-157",
+                "undraw_male_avatar_g98d7R3z": "home-e-158",
+                "Divn4LO": "home-e-159",
+                "Diva6ue": "home-e-160",
+                "Div6BgX": "home-e-161",
+                "Div69id": "home-e-162",
+                "Div73PS": "home-e-163",
+                "Divv7mM": "home-e-164",
+                "SpanhnaT": "home-e-165",
+                "SpanY4Qw": "home-e-166",
+                "Divq24i": "home-e-167",
+                "photo_nApaSgkzaxgRN5j": "home-e-168",
+                "Div18wI": "home-e-169",
+                "DivkFaW": "home-e-170",
+                "SpancQYl": "home-e-171",
+                "photo_nApaSgkzaxg3Lms": "home-e-172",
+                "Spanfm4T": "home-e-173",
+                "Span9IsN": "home-e-174",
+                "DivATLG": "home-e-175",
+                "DivV5Kx": "home-e-176",
+                "Divuf1H": "home-e-177",
+                "ButtonnQag": "home-e-178",
+                "SpanEq5U": "home-e-179",
+                "Divd1H4": "home-e-180",
+                "ButtonqPPq": "home-e-181",
+                "ButtonbIGF": "home-e-182",
+                "Spanhk7h": "home-e-183",
+                "SpanL258": "home-e-184",
+                "DivqxCh": "home-e-185",
+                "Div2FB1": "home-e-186",
+                "Span7l8z": "home-e-187",
+                "Span3ZlJ": "home-e-188",
+                "DivU3TX": "home-e-189",
+                "Div1uNE": "home-e-190",
+                "DivEuG4": "home-e-191",
+                "Divhtnx": "home-e-192",
+                "FontshJQE": "home-e-193",
+                "Fonts8RPR": "home-e-194",
+                "FontsrH2h": "home-e-195",
+                "FontskEuY": "home-e-196",
+                "FontsuxRS": "home-e-197",
+                "FontsEA3D": "home-e-198",
+                "FontsIrqo": "home-e-199",
+                "FontsImhX": "home-e-200",
+                "FontsQ1e2": "home-e-201",
+                "Fontstoue": "home-e-202",
+                "FontsqKV5": "home-e-203",
+                "Fonts0rNQ": "home-e-204",
+                "FontsYumQ": "home-e-205",
+                "FontsaI4e": "home-e-206",
+                "FontsbYo9": "home-e-207",
+                "FontskpCH": "home-e-208",
+                "FontsoBUM": "home-e-209",
+                "Divpueq": "home-e-210",
+                "Fontsxu0M": "home-e-211",
+                "FontsCB9i": "home-e-212",
+                "Fonts0CEp": "home-e-213",
+                "Fonts79Gw": "home-e-214",
+                "Fonts9VXO": "home-e-215",
+                "DivTd7W": "home-e-216",
+                "Fonts98uI": "home-e-217",
+                "FontskRnc": "home-e-218",
+                "FontsefNm": "home-e-219",
+                "FontsZpeW": "home-e-220",
+                "FontsXLqM": "home-e-221",
+                "DivrZ5s": "home-e-222",
+                "VideoIvOV": "home-e-223",
+                "DivIJl2": "home-e-224",
+                "DivqO4b": "home-e-225",
+                "Divhxr0": "home-e-226",
+                "DiviRyG": "home-e-227",
+                "Div09ZJ": "home-e-228",
+                "DivKDBt": "home-e-229",
+                "Div0rMm": "home-e-230",
+                "Divg4pB": "home-e-231",
+                "DivjrcR": "home-e-232",
+                "Div2VD2": "home-e-233",
+                "DivHzCh": "home-e-234",
+                "DivdmuS": "home-e-235",
+                "Divkfh7": "home-e-236",
+                "Divjvb7": "home-e-237",
+                "Divlk8D": "home-e-238",
+                "DivrRpV": "home-e-239",
+                "DivjShQ": "home-e-240",
+                "DivPXam": "home-e-241",
+                "DivZsUw": "home-e-242",
+                "SpanE5pS": "home-e-243",
+                "SpanrdiD": "home-e-244",
+                "DivS6sf": "home-e-245",
+                "DivJAI5": "home-e-246",
+                "SpankVb0": "home-e-247",
+                "SpanhrRm": "home-e-248",
+                "Spanlo56": "home-e-249",
+                "SpanM1up": "home-e-250",
+                "DivIHzY": "home-e-251",
+                "SpanW0th": "home-e-252",
+                "Spanx36n": "home-e-253",
+                "Div35PU": "home-e-254",
+                "SpanQ4kH": "home-e-255",
+                "SpanoJRq": "home-e-256",
+                "Div5OEZ": "home-e-257",
+                "SpanyoLT": "home-e-258",
+                "SectionzH6o": "home-e-259",
+                "SpanVMy4": "home-e-260",
+                "SpanBKlo": "home-e-261",
+                "Div5aiI": "home-e-262",
+                "Divgr6j": "home-e-263",
+                "Spank7I3": "home-e-264",
+                "Span488V": "home-e-265",
+                "SpanukGf": "home-e-266",
+                "SpanCkxs": "home-e-267",
+                "DivlNbS": "home-e-268",
+                "DivAV3P": "home-e-269",
+                "DivMV9K": "home-e-270",
+                "ButtonEYhO": "home-e-271",
+                "DivqXMU": "home-e-272",
+                "DivxJag": "home-e-273",
+                "Containerk8Kj": "home-e-274",
+                "Divv8bI": "home-e-275",
+                "SpanqavL": "home-e-276",
+                "SpanpimP": "home-e-277",
+                "SpanTouA": "home-e-278",
+                "HTMLCodeJvd3": "home-e-279",
+                "HTMLCodePLbb": "home-e-280",
+                "HTMLCodeDbfl": "home-e-281",
+                "HTMLCodeRDPY": "home-e-282",
+                "HTMLCodesBhA": "home-e-283",
+                "DivQU7w": "home-e-284",
+                "SpanQb2M": "home-e-285",
+                "InputhTql": "home-e-286",
+                "DivHhCc": "home-e-287",
+                "Fontsiqpj": "home-e-288",
+                "DivSxTV": "home-e-289",
+                "SpanAZ1F": "home-e-290",
+                "FontsLt01": "home-e-291",
+                "Divgj0U": "home-e-292",
+                "Button35Mt": "home-e-293",
+                "SpanankH": "home-e-294",
+                "SpankLuj": "home-e-295",
+                "Span06vr": "home-e-296",
+                "DivHoFk": "home-e-297",
+                "ContainerSXcx": "home-e-298",
+                "SpaneQdH": "home-e-299"
+            };
+            var projectId = "692f5253d141a2382294f054";
+            var context = "home";
+            console.log("Forms detected:", formsData.length);
+
+            // Loader and Toast functions
+            var loader = null;
+
+            function showLoader() {
+                loader = document.createElement('div');
+                loader.style.cssText =
+                    'position: fixed; top: 0; left: 0; width: 100%; height: 100%; ' +
+                    'background: rgba(0,0,0,0.5); display: flex; justify-content: center; ' +
+                    'align-items: center; z-index: 10000;';
+
+                var spinner = document.createElement('div');
+                spinner.style.cssText =
+                    'width: 40px; height: 40px; border: 4px solid #f3f3f3; ' +
+                    'border-top: 4px solid #3498db; border-radius: 50%; ' +
+                    'animation: spin 1s linear infinite;';
+
+                var style = document.createElement('style');
+                style.textContent = '@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }';
+                document.head.appendChild(style);
+
+                loader.appendChild(spinner);
+                document.body.appendChild(loader);
+            }
+
+            function hideLoader() {
+                if (loader && loader.parentNode) {
+                    loader.parentNode.removeChild(loader);
+                    loader = null;
+                }
+            }
+
+            function showToast(message, type) {
+                var toast = document.createElement('div');
+                var bgColor = type === 'success' ? '#059669' : '#dc2626';
+                var textColor = type === 'success' ? '#065f46' : '#991b1b';
+
+                toast.style.cssText =
+                    'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); ' +
+                    'background: white; color: ' + textColor + '; ' +
+                    'padding: 20px 30px; border-radius: 8px; z-index: 10001; ' +
+                    'box-shadow: 0 4px 20px rgba(0,0,0,0.15); border: 2px solid ' + bgColor + '; ' +
+                    'font-size: 16px; font-weight: 500; text-align: center; min-width: 200px;';
+
+                toast.textContent = message;
+                document.body.appendChild(toast);
+
+                setTimeout(function() {
+                    if (toast.parentNode) {
+                        toast.parentNode.removeChild(toast);
+                    }
+                }, 3000);
+            }
+
+            // Step 2: Try to find buttons and attach listeners
+            for (var i = 0; i < formsData.length; i++) {
+                var formData = formsData[i];
+                console.log("Processing form:", formData.formClassName);
+
+                for (var j = 0; j < formData.formElements.length; j++) {
+                    var elementData = formData.formElements[j];
+                    console.log("Element", j + ":", elementData.name, "class:", elementData.className);
+
+                    if (elementData.name === 'Button') {
+                        console.log("Found button, looking for DOM element with class:", elementData.className);
+                        var button = document.querySelector('.' + elementData.className);
+                        console.log("Button found in DOM:", !!button);
+
+                        if (button) {
+                            console.log("Adding click listener to button");
+                            button.addEventListener('click', function(event) {
+                                console.log("Button clicked!");
+
+                                // Show loader
+                                showLoader();
+
+                                // Step 3: Find parent form
+                                var parent = event.target.parentElement;
+                                while (parent && parent !== document.body) {
+                                    console.log("Checking parent:", parent.tagName, "data-component-type:", parent.getAttribute('data-component-type'));
+                                    if (parent.getAttribute('data-component-type') === 'form-component-v1') {
+                                        console.log("Found parent form:", parent);
+                                        break;
+                                    }
+                                    parent = parent.parentElement;
+                                }
+
+                                if (parent && parent.getAttribute('data-component-type') === 'form-component-v1') {
+                                    console.log("Success: Parent form found!");
+
+                                    // Step 4: Gather form data
+                                    var formElement = parent;
+                                    var inputs = formElement.querySelectorAll('input, textarea, select');
+                                    console.log("Found", inputs.length, "input elements in form");
+
+                                    // Create reverse mapping to get original clientIds from classNames
+                                    var reverseMapping = {};
+                                    for (var originalId in mapping) {
+                                        reverseMapping[mapping[originalId]] = originalId;
+                                    }
+
+                                    var formData = [];
+                                    for (var k = 0; k < inputs.length; k++) {
+                                        var input = inputs[k];
+                                        var value = input.type === 'checkbox' ? input.checked : input.value;
+                                        var mappedClassName = input.getAttribute('data-clientid');
+                                        var originalClientId = reverseMapping[mappedClassName];
+                                        console.log("Input", k + ":", input.type, "value:", value, "mappedClassName:", mappedClassName, "originalClientId:", originalClientId);
+
+                                        formData.push({
+                                            clientId: originalClientId,
+                                            type: input.type,
+                                            value: value
+                                        });
+                                    }
+
+                                    // Get form's original client ID
+                                    var formMappedClassName = formElement.getAttribute('data-clientid');
+                                    var formOriginalClientId = reverseMapping[formMappedClassName];
+                                    console.log("Form mapped className:", formMappedClassName, "Form original client ID:", formOriginalClientId);
+
+                                    // Construct API URL
+                                    var apiUrl = "https://production-api.codedesign.app/guest/database/" + projectId + "/database/" + formOriginalClientId;
+                                    console.log("API URL:", apiUrl);
+
+                                    // Step 5: Test API call
+                                    console.log("Making API call with data:", formData);
+                                    fetch(apiUrl, {
+                                            method: 'POST',
+                                            headers: {
+                                                'Content-Type': 'application/json'
+                                            },
+                                            body: JSON.stringify({
+                                                formData: formData,
+                                                formId: formOriginalClientId,
+                                                project: projectId,
+                                                context: context,
+                                                order: false,
+                                                orderId: null
+                                            })
+                                        })
+                                        .then(function(response) {
+                                            console.log("API response status:", response.status);
+                                            hideLoader();
+
+                                            if (response.status === 200 || response.status === 201) {
+                                                showToast("Message sent successfully!", "success");
+                                            } else {
+                                                showToast("Failed to send message. Please try again.", "error");
+                                            }
+                                            return response.text();
+                                        })
+                                        .then(function(data) {
+                                            console.log("API response data:", data);
+                                        })
+                                        .catch(function(error) {
+                                            console.log("API error:", error);
+                                            hideLoader();
+                                            showToast("Network error. Please try again.", "error");
+                                        });
+                                } else {
+                                    console.log("Error: No parent form found");
+                                }
+                            });
+                        }
+                    }
+                }
+            }
+        })();
+    </script>
+    <script id="humble-scroll-lib" defer="">
+        // Credits to
+        // Original file created from,
+        // GitHub Repository: https://github.com/MathiasOxholm/humbleScroll
+        // User: MathiasOxholm
+        //
+
+        // needs css file to be imported (done in public/css/cdHumbleScroll.css)
+
+        // Main HumbleScroll Class
+        class HumbleScroll {
+            constructor(options, frameWindow, frameDocument) {
+                this.frameWindow = frameWindow;
+                this.frameDocument = frameDocument;
+                this.prefix = "cdhs";
+                this.documentHeight =
+                    this.frameDocument.documentElement.scrollHeight -
+                    this.frameDocument.documentElement.clientHeight;
+                this.defaultOptions = {
+                    root: null,
+                    element: `[data-${this.prefix}]`,
+                    enableCallback: false,
+                    callback: `data-${this.prefix}-call`,
+                    class: `${this.prefix}-inview`,
+                    initClass: `${this.prefix}-init`,
+                    threshold: 0.1,
+                    offset: {
+                        top: 0,
+                        right: 0,
+                        bottom: -40,
+                        left: 0,
+                    },
+                    repeat: false,
+                    mirror: false,
+                    startEvent: "DOMContentLoaded",
+                    responsive: {},
+                };
+                this.options = {
+                    ...this.defaultOptions,
+                    ...options
+                };
+                this.observerOptions = {
+                    root: this.options.root,
+                    rootMargin: this.calculateOffset(this.options.offset),
+                    threshold: this.options.threshold,
+                };
+                this.animationElements = this.frameDocument.querySelectorAll(
+                    this.options.element
+                );
+                this.callbackElements = this.frameDocument.querySelectorAll(
+                    `[${this.options.callback}]`
+                );
+                this.init();
+            }
+
+            init() {
+                const completeEvent = new Event(`${this.prefix}:complete`);
+                let caller = null;
+
+                const animationObserverFunction = (entries) => {
+                    entries.forEach((entry) => {
+                        const dataAttr = entry.target.dataset.hs;
+
+                        if (!this.options.repeat && entry.isIntersecting) {
+                            entry.target.classList.add(this.options.class);
+                            observer.unobserve(entry.target);
+                            return;
+                        }
+
+                        entry.target.classList.toggle(this.options.class, entry.isIntersecting);
+
+                        if (entry.isIntersecting && dataAttr && dataAttr.includes("once")) {
+                            entry.target.classList.add(this.options.class);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                };
+
+                const callbackObserverFunction = (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            const call = entry.target.getAttribute(this.options.callback);
+                            this.frameWindow[call] && this.frameWindow[call]();
+                            caller.unobserve(entry.target);
+                        }
+                    });
+                };
+
+                const observer = new IntersectionObserver(
+                    animationObserverFunction,
+                    this.observerOptions
+                );
+                this.options.enableCallback &&
+                    (caller = new IntersectionObserver(
+                        callbackObserverFunction,
+                        this.observerOptions
+                    ));
+
+                const startEventCallback = () => {
+                    this.animationElements.forEach((element) => {
+                        observer.observe(element);
+                        element.classList.add(this.options.initClass);
+                    });
+
+                    this.frameDocument.body.classList.add(`${this.prefix}-loaded`);
+                    this.frameWindow.dispatchEvent(completeEvent);
+                };
+
+                const startCallbackFunction = () => {
+                    this.callbackElements.forEach((element) => {
+                        caller.observe(element);
+                    });
+                };
+                //doing a small hack here (readystate)
+                // Directly call startEventCallback if document is already loaded
+
+                onDocumentReady(function() {
+                    startEventCallback();
+                    // Place your code here that needs to run once the DOM is ready
+                }, this.frameDocument);
+                // if (this.frameDocument.readyState === "complete") {
+                //   console.log("runs here 1")
+
+                // } else {
+                //   console.log("runs here 2")
+
+                //   this.frameWindow.addEventListener(
+                //     this.options.startEvent,
+                //     startEventCallback
+                //   );
+                // }
+                // this.frameWindow.addEventListener(
+                //   this.options.startEvent,
+                //   startEventCallback
+                // );
+                this.options.enableCallback &&
+                    this.frameWindow.addEventListener(
+                        this.options.startEvent,
+                        startCallbackFunction
+                    );
+                this.frameWindow.dispatchEvent(completeEvent);
+            }
+
+            update() {
+                this.init();
+            }
+
+            on(event, callback) {
+                this.frameWindow.addEventListener(
+                    event,
+                    (e) => {
+                        callback(e);
+                    },
+                    false
+                );
+            }
+
+            calculateOffset(data) {
+                let obj = {
+                    ...this.defaultOptions.offset,
+                    ...data
+                };
+                let offset = `${obj.top}px ${obj.right}px ${obj.bottom}px ${obj.left}px`;
+                let repeatOffset = `${this.documentHeight}px ${obj.right}px ${obj.bottom}px ${obj.left}px`;
+
+                if (this.options.repeat) {
+                    !this.options.mirror && (offset = repeatOffset);
+                }
+
+                return offset;
+            }
+        }
+
+
+        // If you need to create an instance of HumbleScroll outside of this file,
+        // you can import HumbleScroll from this file and then use the following code.
+        // The actual instantiation would typically happen in the file where you are using the FrameContextConsumer.
+
+        /*
+        // Fire regular HumbleScroll with specific options
+        const scroll = new HumbleScroll({
+          enableCallback: true,
+          repeat: true,
+          mirror: true,
+          threshold: 0.25,
+          offset: {
+            top: -64,
+            bottom: -150,
+          },
+        }, frameWindow, frameDocument); // frameWindow and frameDocument should be the window and document of the iframe
+        */
+
+        function onDocumentReady(fn, document) {
+            if (document.readyState !== "loading") {
+                // If the document is already ready, call the function immediately
+                fn();
+            } else {
+                // Otherwise, wait for the DOMContentLoaded event
+                document.addEventListener("DOMContentLoaded", fn);
+            }
+        }
+    </script>
+    <script defer="">
+        console.log("[HS Debug] HumbleScroll initialization script starting (deferred).");
+        try {
+            console.log("[HS Debug] Attempting to initialize HumbleScroll (deferred)...");
+            var scroll = new HumbleScroll({
+                prefix: "cdhs",
+                enableCallback: true,
+                repeat: false,
+                mirror: true,
+                threshold: 0.25,
+                offset: {
+                    top: -64,
+                    bottom: -150,
+                },
+            }, window, document);
+            console.log("[HS Debug] HumbleScroll initialized successfully (deferred):", scroll);
+        } catch (e) {
+            console.error("[HS Debug] Error initializing HumbleScroll (deferred):", e);
+        }
+        console.log("[HS Debug] HumbleScroll initialization script finished (deferred).");
+    </script>
+
+
+
+
+</body></html>
